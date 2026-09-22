@@ -1,0 +1,23 @@
+{
+  "name": "breakup-app",
+  "version": "1.0.0",
+  "description": "Sign-and-send breakup/divorce agreements between two registered users",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.3.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "helmet": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
