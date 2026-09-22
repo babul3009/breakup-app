@@ -5,8 +5,11 @@ services:
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /healthz
+    plan: free
     envVars:
       - { key: NODE_ENV, value: production }
       - { key: JWT_SECRET, generateValue: true }
-      - { key: DB_FILE, value: /var/data/data.db }
-    disk: { name: data, mountPath: /var/data, sizeGB: 1 }
+      - { key: DB_FILE, value: data.db }
+    # No disk on the free plan: this SQLite file resets on every deploy/restart.
+    # Fine for a portfolio demo. For real users, add a paid instance + disk (see README),
+    # or switch to a hosted Postgres database.
