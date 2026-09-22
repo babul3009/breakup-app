@@ -7,12 +7,6 @@ File a breakup or divorce the formal way: sign a funny mock-legal agreement, sen
 2. **B** opens the link, reads the document, and must **register or log in** to respond.
 3. B **accepts** (draws or uploads a signature) or **rejects** (quick or custom reply). The first logged-in user to respond claims the request in one atomic transaction. Nobody else can answer it, and A cannot answer their own.
 4. A gets a **notification**. Both see it in **History**; only they can open the full document.
-
-## Run locally
-```bash
-npm install
-JWT_SECRET=$(openssl rand -hex 32) npm start   # http://localhost:3000
-npm test
 ```
 
 ## Deploy (Render)
