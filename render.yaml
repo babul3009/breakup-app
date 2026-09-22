@@ -7,6 +7,7 @@ services:
     healthCheckPath: /healthz
     plan: free
     envVars:
+      - { key: NODE_VERSION, value: 20.18.1 }
       - { key: NODE_ENV, value: production }
       - { key: JWT_SECRET, generateValue: true }
       - { key: DB_FILE, value: data.db }
