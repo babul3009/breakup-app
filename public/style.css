@@ -2,13 +2,13 @@
    1. THEME (colors — light mode default, dark mode override)
    ============================================================ */
 :root {
-  --bg: #faf6f1;
-  --card: #fff;
-  --ink: #2b2320;
-  --mut: #7a6e68;
-  --acc: #c0392b;
-  --line: #e4dbd2;
-  --ok: #2e7d4f;
+    --bg: #1a1614;
+    --card: #252019;
+    --ink: #f1e9e2;
+    --mut: #a99d95;
+    --acc: #ef6b5b;
+    --line: #3a322c;
+    --ok: #5fc48a;
 }
 
 @media (prefers-color-scheme: dark) {
